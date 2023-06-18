@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:http/http.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import '../services/person_database.dart';
@@ -29,6 +28,7 @@ class FromScreenState extends State<FromScreen> {
   bool phoneNumberFocused = false;
 
   late Uint8List imageAsBytes = Uint8List(0);
+
   void pickImageClick() async {
     XFile? image = await imagePicker.pickImage(source: ImageSource.gallery);
     setState(() {
@@ -109,6 +109,7 @@ class FromScreenState extends State<FromScreen> {
       nameAndSurnameController.text = widget.person!.nameAndSurname;
       cityController.text = widget.person!.city;
       phoneNumberController.text = widget.person!.phoneNumber;
+      imageAsBytes = widget.person!.imageBytes!;
     }
 
     nameAndSurnameFocusNode = FocusNode();
