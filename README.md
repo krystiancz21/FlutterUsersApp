@@ -1,16 +1,8 @@
-# app4
+# FlutterUsersApp 
+FlutterUsersApp to aplikacja umożliwiająca pobieranie danych o użytkownikach z serwisu RandomUser. Aplikacja gromadzi informacje takie jak imię, nazwisko, miasto, numer telefonu oraz awatar użytkownika. Dane są zapisywane w bazie SQLite.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Główne funkcjonalności aplikacji:
+* **Pobieranie danych o użytkownikach:** Użytkownik może określić liczbę osób, których dane mają zostać pobrane.
+* **Wyświetlanie danych użytkowników:** Możliwość określenia liczby użytkowników, których dane mają być wyświetlone.
+* **Odświeżanie danych:** Aplikacja pozwala na pobranie nowych danych z serwisu (tryb odświeżania - aplikacja za każdym razem pobiera losowe dane z serwisu RandomUser).
+* **Tryb offline:** W trybie offline użytkownik może przeglądać dane o użytkownikach przechowywanych w lokalnej bazie danych. Aplikacja zapewnia możliwość dodawania nowych osób, edycji istniejących rekordów oraz usuwania użytkowników.
