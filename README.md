@@ -39,4 +39,3 @@ Flutter | Dart | SQLite
 
 ### Screen showing deletion of an existing person 
 ![Edit](images/delete_view.png)
-
